@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAH Sublimação | Estamparia e Impressão de Alta Performance</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            bahDark: '#121417',
+                            bahCard: '#1a1d23',
+                            bahTeal: '#82aea9',      /* Tom verde-água extraído da logo */
+                            bahTealHover: '#6e9b96',
+                            offwhite: '#f8f9fa',
+                        }
+                    }
+                }
+            }
+    </script>
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+            body {
+                font-family: 'Inter', sans-serif;
+                background-color: #121417;
+                color: #f8f9fa;
+            }
+
+            .glass-nav {
+                background: rgba(18, 20, 23, 0.9);
+                backdrop-filter: blur(12px);
+            }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-[#82aea9] selection:text-black">
+
+    <!-- Navbar / Menu Intuitivo -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-neutral-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo no Cabeçalho -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div
+                    class="w-12 h-12 rounded-xl bg-white p-1.5 border border-neutral-700 flex items-center justify-center shadow-md overflow-hidden group-hover:border-[#82aea9] transition-colors">
+                    <img src="~/images/LOGO-BAH.jpg" alt="Logo BAH Sublimação" class="w-full h-full object-contain"
+                         onerror="this.src='https://placehold.co/100x100/ffffff/000000?text=BAH'">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-wider text-offwhite uppercase">BAH <span
+                        class="text-[#82aea9]">Sublimação</span></span>
+                        <span class="text-[10px] text-neutral-400 tracking-widest uppercase">Printing & Estamparia</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-300">
+                    <a href="#home" class="hover:text-[#82aea9] transition-colors">Home</a>
+                    <a href="#catalogo" class="hover:text-[#82aea9] transition-colors">Catálogo</a>
+                    <a href="#sobre" class="hover:text-[#82aea9] transition-colors">Sobre Nós</a>
+                    <a href="#contato" class="hover:text-[#82aea9] transition-colors">Contato</a>
+                </nav>
+
+                <!-- Ação Rápida / Botão Contato Topo -->
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/5549999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento%20na%20BAH%20Sublimação."
+                       target="_blank"
+                       class="bg-[#82aea9] hover:bg-[#6e9b96] text-neutral-950 font-semibold px-5 py-2.5 rounded-xl text-sm transition-all flex items-center gap-2 shadow-lg shadow-[#82aea9]/10">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Orçamento Rápido</span>
+                    </a>
+                </div>
+
+                <!-- Botão Menu Mobile -->
+                <button id="mobile-menu-btn" class="md:hidden text-neutral-300 hover:text-white focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Menu Mobile Dropdown -->
+            <div id="mobile-menu" class="hidden md:hidden bg-bahCard border-b border-neutral-800 px-6 py-4 space-y-3">
+                <a href="#home" class="block text-neutral-300 hover:text-[#82aea9] py-1">Home</a>
+                <a href="#catalogo" class="block text-neutral-300 hover:text-[#82aea9] py-1">Catálogo</a>
+                <a href="#sobre" class="block text-neutral-300 hover:text-[#82aea9] py-1">Sobre Nós</a>
+                <a href="#contato" class="block text-neutral-300 hover:text-[#82aea9] py-1">Contato</a>
+                <div class="pt-2">
+                    <a href="https://wa.me/5549999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento%20na%20BAH%20Sublimação."
+                       target="_blank"
+                       class="w-full bg-[#82aea9] text-neutral-950 py-2.5 rounded-xl text-sm font-semibold flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Chamar no WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section (Com Logo em Destaque) -->
+        <section id="home"
+                 class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="flex-1 space-y-6 text-center md:text-left">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-900 border border-neutral-800 text-xs text-[#82aea9] font-medium tracking-wide shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-[#82aea9] animate-pulse"></span> Qualidade Premium em Impressão &
+                    Sublimação
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-offwhite leading-tight">
+                    Dê vida à sua marca com a <span
+                    class="text-[#82aea9] underline decoration-[#82aea9]/40 underline-offset-8">BAH Sublimação</span>.
+                </h1>
+                <p class="text-neutral-400 text-base sm:text-lg max-w-xl mx-auto md:mx-0 font-light leading-relaxed">
+                    Especialistas em estampas de alta definição, uniformes corporativos e vestuário personalizado com
+                    tecnologia de ponta e acabamento impecável.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
+                    <a href="#catalogo"
+                       class="w-full sm:w-auto bg-[#82aea9] hover:bg-[#6e9b96] text-neutral-950 font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md text-center">
+                        Explorar Catálogo
+                    </a>
+                    <a href="#contato"
+                       class="w-full sm:w-auto bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-offwhite font-medium px-8 py-3.5 rounded-xl transition-all text-center">
+                        Fale Conosco
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Banner Visual / Exibição da Logo Principal -->
+            <div class="flex-1 w-full max-w-md">
+                <div
+                    class="relative rounded-3xl bg-bahCard border border-neutral-800 p-8 shadow-2xl overflow-hidden group flex flex-col items-center text-center">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-neutral-900/60 to-transparent pointer-events-none">
+                    </div>
+                    <!-- Logo Exposta no Banner Hero -->
+                    <div
+                        class="w-48 h-48 rounded-2xl bg-white p-4 shadow-xl border border-neutral-200 flex items-center justify-center mb-6 relative z-10 group-hover:scale-105 transition-transform duration-500">
+                        <img src="~/images/LOGO-BAH.jpg" alt="BAH Sublimação Logo Oficial"
+                             class="w-full h-full object-contain"
+                             onerror="this.src='https://placehold.co/300x300/ffffff/000000?text=BAH+SUBLIMACAO'">
+                    </div>
+                    <h3 class="text-lg font-bold text-offwhite relative z-10">Excelência em Printing</h3>
+                    <p class="text-xs text-neutral-400 mt-1 relative z-10">Cores vibrantes, durabilidade e toque zero nas
+                        peças.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Catálogo / Vitrine de Produtos -->
+            <section id="catalogo" class="py-20 bg-neutral-900/30 border-t border-b border-neutral-800/80">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-2xl mx-auto mb-16">
+                        <h2 class="text-xs font-semibold tracking-widest text-[#82aea9] uppercase mb-3">Nossos Produtos</h2>
+                        <p class="text-3xl font-bold tracking-tight text-offwhite sm:text-4xl">Linha de Sublimação</p>
+                        <p class="mt-3 text-neutral-400 font-light">Conheça as principais soluções de vestuário e estamparia
+                            desenvolvidas sob medida.</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- Produto 1 -->
+                            <div
+                                class="bg-bahCard rounded-2xl border border-neutral-800 overflow-hidden hover:border-[#82aea9]/50 transition-all group flex flex-col justify-between">
+                                <div>
+                                    <div class="aspect-[4/3] bg-neutral-900 overflow-hidden relative">
+                                        <img src="https://placehold.co/500x400/18181b/82aea9?text=Camisetas+Personalizadas"
+                                             alt="Camisetas Personalizadas"
+                                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90"
+                                             onerror="this.src='https://placehold.co/500x400/18181b/ffffff?text=Camisetas'">
+                                        <span
+                                        class="absolute top-3 right-3 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 text-xs text-[#82aea9] px-3 py-1 rounded-full font-medium">Destaque</span>
+                                    </div>
+                                    <div class="p-6 space-y-2">
+                                        <h3 class="text-xl font-bold text-offwhite">Camisetas Personalizadas</h3>
+                                        <p class="text-neutral-400 text-sm font-light leading-relaxed">
+                                            Perfeitas para eventos, marcas próprias, uniformes de equipes e presentes marcantes.
+                                            Impressão nítida que não desbota.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="p-6 pt-0">
+                                    <a href="https://wa.me/5549999999999?text=Olá!%20Gostaria%20de%20orçamento%20para%20Camisetas%20Personalizadas."
+                                       target="_blank"
+                                       class="w-full bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-offwhite py-3 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 group-hover:border-[#82aea9]/40">
+                                        <i class="fa-brands fa-whatsapp text-[#82aea9]"></i> Orçar via WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Produto 2 -->
+                            <div
+                                class="bg-bahCard rounded-2xl border border-neutral-800 overflow-hidden hover:border-[#82aea9]/50 transition-all group flex flex-col justify-between">
+                                <div>
+                                    <div class="aspect-[4/3] bg-neutral-900 overflow-hidden relative">
+                                        <img src="https://placehold.co/500x400/18181b/82aea9?text=Uniformes+Corporativos"
+                                             alt="Uniformes Corporativos"
+                                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90"
+                                             onerror="this.src='https://placehold.co/500x400/18181b/ffffff?text=Uniformes'">
+                                        <span
+                                        class="absolute top-3 right-3 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 text-xs text-[#82aea9] px-3 py-1 rounded-full font-medium">Empresarial</span>
+                                    </div>
+                                    <div class="p-6 space-y-2">
+                                        <h3 class="text-xl font-bold text-offwhite">Uniformes Profissionais</h3>
+                                        <p class="text-neutral-400 text-sm font-light leading-relaxed">
+                                            Valorize a identidade visual da sua empresa. Polos e camisas confortáveis, respiráveis e
+                                            com alta durabilidade de uso diário.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="p-6 pt-0">
+                                    <a href="https://wa.me/5549999999999?text=Olá!%20Gostaria%20de%20orçamento%20para%20Uniformes%20Corporativos."
+                                       target="_blank"
+                                       class="w-full bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-offwhite py-3 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 group-hover:border-[#82aea9]/40">
+                                        <i class="fa-brands fa-whatsapp text-[#82aea9]"></i> Orçar via WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Produto 3 -->
+                            <div
+                                class="bg-bahCard rounded-2xl border border-neutral-800 overflow-hidden hover:border-[#82aea9]/50 transition-all group flex flex-col justify-between">
+                                <div>
+                                    <div class="aspect-[4/3] bg-neutral-900 overflow-hidden relative">
+                                        <img src="https://placehold.co/500x400/18181b/82aea9?text=Blusoes+e+Moletons"
+                                             alt="Blusões e Moletons"
+                                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90"
+                                             onerror="this.src='https://placehold.co/500x400/18181b/ffffff?text=Moletons'">
+                                        <span
+                                        class="absolute top-3 right-3 bg-neutral-900/90 backdrop-blur-md border border-neutral-700 text-xs text-[#82aea9] px-3 py-1 rounded-full font-medium">Inverno</span>
+                                    </div>
+                                    <div class="p-6 space-y-2">
+                                        <h3 class="text-xl font-bold text-offwhite">Blusões & Moletons</h3>
+                                        <p class="text-neutral-400 text-sm font-light leading-relaxed">
+                                            Conforto térmico unidas a estampas de alta qualidade. Ideal para turmas de formatura,
+                                            equipes esportivas e dias frios.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="p-6 pt-0">
+                                    <a href="https://wa.me/5549999999999?text=Olá!%20Gostaria%20de%20orçamento%20para%20Blusões%20e%20Moletons."
+                                       target="_blank"
+                                       class="w-full bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-offwhite py-3 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 group-hover:border-[#82aea9]/40">
+                                        <i class="fa-brands fa-whatsapp text-[#82aea9]"></i> Orçar via WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sobre a Empresa -->
+                <section id="sobre" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div class="space-y-6">
+                            <div
+                                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-900 border border-neutral-800 text-xs text-[#82aea9] font-medium tracking-wide">
+                                Sobre a BAH Sublimação
+                            </div>
+                            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-offwhite">
+                                Compromisso absoluto com a qualidade e fidelidade de cores.
+                            </h2>
+                            <p class="text-neutral-400 font-light leading-relaxed">
+                                A BAH Sublimação nasceu com a missão de transformar tecidos em verdadeiras obras de identidade
+                                visual. Utilizando processos modernos de impressão, garantimos que cada camiseta, uniforme ou
+                                produto entregue supere as expectativas de durabilidade e estética.
+                            </p>
+                            <div class="grid grid-cols-2 gap-6 pt-4">
+                                <div class="border-l-2 border-[#82aea9] pl-4">
+                                    <p class="text-2xl font-bold text-offwhite">+4.500</p>
+                                    <p class="text-xs text-neutral-400 uppercase tracking-wider mt-1">Peças Estampadas</p>
+                                </div>
+                                <div class="border-l-2 border-[#82aea9] pl-4">
+                                    <p class="text-2xl font-bold text-offwhite">100%</p>
+                                    <p class="text-xs text-neutral-400 uppercase tracking-wider mt-1">Satisfação dos Clientes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-bahCard p-8 rounded-3xl border border-neutral-800 space-y-6 shadow-xl">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-[#82aea9] shrink-0 text-xl font-bold">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-offwhite text-base">Visão de Qualidade</h4>
+                                    <p class="text-xs text-neutral-400 mt-1">Garantir que os projetos dos nossos parceiros tenham o
+                                        impacto visual merecido.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-[#82aea9] shrink-0 text-xl font-bold">
+                                        <i class="fa-solid fa-bolt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-offwhite text-base">Agilidade na Entrega</h4>
+                                        <p class="text-xs text-neutral-400 mt-1">Prazos cumpridos com rigor para atender eventos e
+                                            compromissos corporativos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4">
+                                        <div
+                                            class="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center text-[#82aea9] shrink-0 text-xl font-bold">
+                                            <i class="fa-solid fa-gem"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-offwhite text-base">Toque e Durabilidade</h4>
+                                            <p class="text-xs text-neutral-400 mt-1">Tintas de alta fixação que integram-se às fibras sem
+                                                desbotar com as lavagens.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                        </div>
+
+                       
+                        &lt;!-- Conteúdo do Catálogo e Hero --&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato / Chamada Final -->
+        <section id="contato" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <h2 class="text-xs font-semibold tracking-widest text-[#82aea9] uppercase">Contato Direto</h2>
+            <h3 class="text-3xl sm:text-4xl font-bold text-offwhite">Pronto para criar sua estampa na BAH Sublimação?</h3>
+            <p class="text-neutral-400 font-light max-w-xl mx-auto">
+                Fale com nossa equipe comercial pelo WhatsApp e solicite seu orçamento personalizado agora mesmo.
+            </p>
+            <div>
+                <a href="https://wa.me/5549999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20orçamento."
+                   target="_blank"
+                   class="inline-flex items-center gap-3 bg-[#82aea9] hover:bg-[#6e9b96] text-neutral-950 px-8 py-4 rounded-2xl font-semibold transition-all shadow-xl text-base">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Iniciar Atendimento no WhatsApp</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer (Com Logo no Rodapé) -->
+        <footer class="bg-neutral-950 border-t border-neutral-800 py-12 px-4 sm:px-6 lg:px-8">
+            <div
+                class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-white p-1 border border-neutral-700 flex items-center justify-center overflow-hidden">
+                        <img src="LOGO BAH.jpg" alt="BAH Sublimação Rodapé" class="w-full h-full object-contain"
+                             onerror="this.src='https://placehold.co/50x50/ffffff/000000?text=BAH'">
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <span class="font-bold tracking-wider text-offwhite text-sm">BAH Sublimação</span>
+                        <span class="text-[10px] text-neutral-500">Todos os direitos reservados.</span>
+                    </div>
+                </div>
+                <p class="text-xs text-neutral-500">
+                    Desenvolvido para ASP.NET Core MVC (C#) com identidade visual personalizada.
+                </p>
+                <div class="flex items-center gap-4 text-neutral-400">
+                    <a href="#" class="hover:text-[#82aea9] transition-colors"><i
+                        class="fa-brands fa-instagram text-lg"></i></a>
+                        <a href="#" class="hover:text-[#82aea9] transition-colors"><i
+                            class="fa-brands fa-facebook text-lg"></i></a>
+                            <a href="https://wa.me/5549999999999" target="_blank" class="hover:text-[#82aea9] transition-colors"><i
+                                class="fa-brands fa-whatsapp text-lg"></i></a>
+                            </div>
+                        </div>
+                    </footer>
+
+                    <!-- Botão Flutuante do WhatsApp -->
+                    <a href="https://wa.me/5549999999999?text=Olá!%20Vim%20pelo%20site%20da%20BAH%20Sublimação." target="_blank"
+                       class="fixed bottom-6 right-6 z-50 bg-[#82aea9] hover:bg-[#6e9b96] text-neutral-950 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all transform hover:scale-110 focus:outline-none"
+                       aria-label="Contato WhatsApp">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    </a>
+
+                    <!-- Script Menu Mobile -->
+                    <script>
+                            const btn = document.getElementById('mobile-menu-btn');
+                            const menu = document.getElementById('mobile-menu');
+
+                            btn.addEventListener('click', () => {
+                                menu.classList.toggle('hidden');
+                            });
+
+                            menu.querySelectorAll('a').forEach(link => {
+                                link.addEventListener('click', () => {
+                                    menu.classList.add('hidden');
+                                });
+                            });
+                    </script>
+                </body>
+
+            </html>
