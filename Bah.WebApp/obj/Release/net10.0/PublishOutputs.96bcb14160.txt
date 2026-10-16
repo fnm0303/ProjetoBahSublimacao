@@ -1,0 +1,7 @@
+C:\Users\felip\OneDrive\Documentos\ARQUIVOS FELIPE\PROGRAMAS ACADEMIA DO PROGRAMADOR\ProjetoBahSublimacao\publish\Bah.WebApp.exe
+C:\Users\felip\OneDrive\Documentos\ARQUIVOS FELIPE\PROGRAMAS ACADEMIA DO PROGRAMADOR\ProjetoBahSublimacao\publish\appsettings.Development.json
+C:\Users\felip\OneDrive\Documentos\ARQUIVOS FELIPE\PROGRAMAS ACADEMIA DO PROGRAMADOR\ProjetoBahSublimacao\publish\appsettings.json
+C:\Users\felip\OneDrive\Documentos\ARQUIVOS FELIPE\PROGRAMAS ACADEMIA DO PROGRAMADOR\ProjetoBahSublimacao\publish\Bah.WebApp.dll
+C:\Users\felip\OneDrive\Documentos\ARQUIVOS FELIPE\PROGRAMAS ACADEMIA DO PROGRAMADOR\ProjetoBahSublimacao\publish\Bah.WebApp.deps.json
+C:\Users\felip\OneDrive\Documentos\ARQUIVOS FELIPE\PROGRAMAS ACADEMIA DO PROGRAMADOR\ProjetoBahSublimacao\publish\Bah.WebApp.runtimeconfig.json
+C:\Users\felip\OneDrive\Documentos\ARQUIVOS FELIPE\PROGRAMAS ACADEMIA DO PROGRAMADOR\ProjetoBahSublimacao\publish\Bah.WebApp.pdb
