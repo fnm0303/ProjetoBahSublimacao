@@ -29,3 +29,4 @@ C:\Users\felip\OneDrive\Documentos\ARQUIVOS FELIPE\PROGRAMAS ACADEMIA DO PROGRAM
 C:\Users\felip\OneDrive\Documentos\ARQUIVOS FELIPE\PROGRAMAS ACADEMIA DO PROGRAMADOR\ProjetoBahSublimacao\Bah.WebApp\obj\Debug\net10.0\Bah.WebApp.genruntimeconfig.cache
 C:\Users\felip\OneDrive\Documentos\ARQUIVOS FELIPE\PROGRAMAS ACADEMIA DO PROGRAMADOR\ProjetoBahSublimacao\Bah.WebApp\obj\Debug\net10.0\ref\Bah.WebApp.dll
 C:\Users\felip\OneDrive\Documentos\ARQUIVOS FELIPE\PROGRAMAS ACADEMIA DO PROGRAMADOR\ProjetoBahSublimacao\Bah.WebApp\bin\Debug\net10.0\Bah.WebApp.staticwebassets.runtime.json
+C:\Users\felip\OneDrive\Documentos\ARQUIVOS FELIPE\PROGRAMAS ACADEMIA DO PROGRAMADOR\ProjetoBahSublimacao\Bah.WebApp\obj\Debug\net10.0\Bah.WebApp.sourcelink.json
